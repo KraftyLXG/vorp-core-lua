@@ -12,11 +12,11 @@ Config = {
   initJob                  = "unemployed", -- leave it like this
   initJobGrade             = 0, -- leave it like this
   initGroup                = "user", -- leave it like this
-  Whitelist                = false, 
+  Whitelist                = false,
   AllowWhitelistAutoUpdate = false,
-  MaxCharacters            = 3, --MAX ALLOWED TO BE CREATED
-  maxHealth                = 10, -- 10 is FULL 0 IS EMPTY define max outer core for players
-  maxStamina               = 10, -- 10 is FULL 0 IS EMPTY define max outer core for players
+  MaxCharacters            = 5, --MAX ALLOWED TO BE CREATED
+  maxHealth                = 4, -- 10 is FULL 0 IS EMPTY define max outer core for players
+  maxStamina               = 4, -- 10 is FULL 0 IS EMPTY define max outer core for players
 
   ------------------------------------------------------------------------------
   ------------------------------ WEBHOOKS --------------------------------------
@@ -34,18 +34,18 @@ Config = {
 
   SetgroupWebhook   = "", --SETJOB
   SetjobWebhook     = "", --SETGROUP
-  AddmoneyWebhook   = "https://discord.com/api/webhooks/979253966930075689/YS0JWo3TuCo_rEty7PbD_yhY3Ooh4kOz_zWPy_T3O0zYKstg78aFBerxFHwzKplbLNZM", --ADDMONEY
-  DelMoneyWebhook   = "https://discord.com/api/webhooks/979253966930075689/YS0JWo3TuCo_rEty7PbD_yhY3Ooh4kOz_zWPy_T3O0zYKstg78aFBerxFHwzKplbLNZM", --DELMONEY
-  AddItemsWebhook   = "https://discord.com/api/webhooks/979253966930075689/YS0JWo3TuCo_rEty7PbD_yhY3Ooh4kOz_zWPy_T3O0zYKstg78aFBerxFHwzKplbLNZM", --ADDITEMS
-  AddWeaponsWebhook = "https://discord.com/api/webhooks/979253966930075689/YS0JWo3TuCo_rEty7PbD_yhY3Ooh4kOz_zWPy_T3O0zYKstg78aFBerxFHwzKplbLNZM", --ADDWEAPONS
-  DelWagonsWebhook  = "https://discord.com/api/webhooks/979253966930075689/YS0JWo3TuCo_rEty7PbD_yhY3Ooh4kOz_zWPy_T3O0zYKstg78aFBerxFHwzKplbLNZM", --DELWAGONS
-  TpmWebhook        = "https://discord.com/api/webhooks/979253966930075689/YS0JWo3TuCo_rEty7PbD_yhY3Ooh4kOz_zWPy_T3O0zYKstg78aFBerxFHwzKplbLNZM", --TPM
+  AddmoneyWebhook   = "", --ADDMONEY
+  DelMoneyWebhook   = "", --DELMONEY
+  AddItemsWebhook   = "", --ADDITEMS
+  AddWeaponsWebhook = "", --ADDWEAPONS
+  DelWagonsWebhook  = "", --DELWAGONS
+  TpmWebhook        = "", --TPM
   DelHorseWebhook   = "", --DELHORSE
-  HealPlayerWebhook = "https://discord.com/api/webhooks/979253966930075689/YS0JWo3TuCo_rEty7PbD_yhY3Ooh4kOz_zWPy_T3O0zYKstg78aFBerxFHwzKplbLNZM", --HEALPLAYER
-  ReviveWebhook     = "https://discord.com/api/webhooks/979253966930075689/YS0JWo3TuCo_rEty7PbD_yhY3Ooh4kOz_zWPy_T3O0zYKstg78aFBerxFHwzKplbLNZM", --REVIVE
-  WhitelistWebhook  = "https://discord.com/api/webhooks/979253966930075689/YS0JWo3TuCo_rEty7PbD_yhY3Ooh4kOz_zWPy_T3O0zYKstg78aFBerxFHwzKplbLNZM", --WHITELIST
-  BanWarnWebhook    = "https://discord.com/api/webhooks/979253966930075689/YS0JWo3TuCo_rEty7PbD_yhY3Ooh4kOz_zWPy_T3O0zYKstg78aFBerxFHwzKplbLNZM", --BANS/WARNS
-  NewPlayerWebhook  = "https://discord.com/api/webhooks/979253966930075689/YS0JWo3TuCo_rEty7PbD_yhY3Ooh4kOz_zWPy_T3O0zYKstg78aFBerxFHwzKplbLNZM", --NEWPLAYER
+  HealPlayerWebhook = "", --HEALPLAYER
+  ReviveWebhook     = "", --REVIVE
+  WhitelistWebhook  = "", --WHITELIST
+  BanWarnWebhook    = "", --BANS/WARNS
+  NewPlayerWebhook  = "", --NEWPLAYER
 
   ------------------------------------------------------------------------------
   ---------------------------- VOICE -------------------------------------------
@@ -57,22 +57,22 @@ Config = {
   ------------------------------------------------------------------------------
   ------------------------- SHOW OR HIDE UI's ----------------------------------
 
-  HideUi          = false, --show or hide the UI includes  gold cash ID and level bar  the cash gold ID are now being displayed in the inventory. you can disable this one if yo u like it more
-  mapTypeOnFoot   = 1, -- 0 = Off(no radar), 1 = Regular 2 = Expanded  3 = Simple(compass), for on foot
-  mapTypeOnMount  = 1, -- 0 = Off(no radar), 1 = Regular 2 = Expanded  3 = Simple(compass), for on horse
-  enableTypeRadar = false, --- if true the above will work, if false players can overide their radar type in the game settings.
+  HideUi            = true, --show or hide the UI includes  gold cash ID and level bar  the cash gold ID are now being displayed in the inventory. you can disable this one if yo u like it more
+  mapTypeOnFoot     = 3, -- 0 = Off(no radar), 1 = Regular 2 = Expanded  3 = Simple(compass), for on foot
+  mapTypeOnMount    = 3, -- 0 = Off(no radar), 1 = Regular 2 = Expanded  3 = Simple(compass), for on horse
+  enableTypeRadar   = false, --- if true the above will work, if false players can choose their radar type in the game settings.
   Loadinscreen      = true, --ENABLE LOADING SCREENS on spawn and while spawn dead
   LoadinScreenTimer = 10000, -- miliseconds
   -------------------------------------------------------------------------------
   ------------------------------- RESPAWN ---------------------------------------
 
-  RespawnTime = 60, --seconds
+  RespawnTime = 10, --seconds
   RespawnKey = 0xDFF812F9, --[E] KEY
   RespawnTitleFont = 1, -- for the draw text message
   RespawnSubTitleFont = 1, -- for the draw text message sub title font
   CombatLogDeath = true, -- people who combat log now spawn in dead rather than force spawned
   ShowUiDeath = true, -- show or hide the UI if player is dead
-  camDeath = true, -- enable or disable the camera death function
+  camDeath = false, -- enable or disable the camera death function
   sprite = true, --- enable text with sprite or disable
   spriteGrey = false, -- if set to false will enable RED sprite true will be grey
 
@@ -118,8 +118,8 @@ Config = {
   HeadIdDistance = 15,
   ModeKey = true,
   KeyShowIds = "0x8CC9CD42", -- Press X
-  ActiveEagleEye = false,
-  ActiveDeadEye = true,
+  ActiveEagleEye = true,
+  ActiveDeadEye = false,
   TimeZoneDifference = 1, -- Your time zone difference with UTC in winter time
 
   ----------------------------------------------------------------------------
@@ -133,12 +133,12 @@ Config = {
   --------------------------------------------------------------------------------------
   -----------------------------BUILT IN RICH PRESENCE DISCORD --------------------------
   maxplayers = 128, -- change to the number of players that can get in to your server
-  appid = 974359536200740924, -- Application ID (Replace this with you own)
+  appid = nil, -- Application ID (Replace this with you own)
   biglogo = "synred", -- image assets name for the "large" icon.
   biglogodesc = " Redm Server Connect: ", -- text when hover over image
   smalllogo = "smallboy", -- image assets name for the "small" icon.(OPTIONAL)
   smalllogodesc = "Join us for a good time", -- text when hover over image
-  discordlink = "https://discord.gg/NerdHaven", -- discord link
+  discordlink = "https://discord.gg/", -- discord link
   richpresencebutton = "Join Discord", --set button text for Rich Presence Button
   shownameandid = true, --show player steam name and id
 
@@ -170,13 +170,13 @@ Config = {
     mustBeSeated       = "VORP: You must be in the driver's seat!",
     wagonInFront       = "VORP: You must be seated or near a wagon to delete it!",
     cantCarry          = "VORP: Can't carry more weapons!",
-    Hold               = "Welcome to NerdHaven",
-    Load               = "Finding last location",
-    Almost             = "Loading...",
+    Hold               = "HOLD ON!!",
+    Load               = "You are loading in",
+    Almost             = "Almost there...",
     Holddead           = "YOU ARE DEAD",
-    Loaddead           = "you left while dead",
+    Loaddead           = "you left the server while dead",
     forcedrespawn      = "YOU WILL BE RESPAWNED",
-    forced             = "Because you left while dead",
+    forced             = "Because you left the server while dead",
     sit                = "you need to be steated",
   },
 
